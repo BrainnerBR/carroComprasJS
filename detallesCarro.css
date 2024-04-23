@@ -1,0 +1,143 @@
+*{
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; /* Opcional, para asegurarse de que ocupe todo el ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    height: 10vh;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    background: #fff;
+}
+main{
+    display: flex;
+    height: 100%;
+    background: #caf0f8;
+    text-align: center;
+    min-height: 100vh;
+}
+
+
+.nav h1 {
+    margin: 0; /* Elimina los márgenes predeterminados del h1 */
+}
+.inicio {
+    position: absolute;
+    right: 5vh; /* Ajusta el espacio entre el ícono y el borde derecho */
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    font-size: 3vh;
+}
+.inicio a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    max-width: 1200px;
+}
+.productosSeleccionados {
+    list-style-type: none;
+    padding: 0;
+}
+.carritoContainer{
+    margin-top: 10vh;
+    flex: 1;
+}
+.priceContainer{
+    flex: 1;
+    margin-left: 10vh;
+    margin-top: 17vh;
+    font-size: 2.5vh;
+    height: 50vh;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+
+}
+hr{
+    width: 50%;
+    color: #000;
+}
+
+.producto {
+    margin-bottom: 10px;
+    width: 100%;
+    background: #fff;
+    padding: 2vh;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    text-align: left;
+}
+
+.producto img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.producto h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.producto p {
+    margin: 5px 0;
+}
+li {
+    margin-top: 1vh;
+}
+#productosSeleccionados h3{  
+    font-size: 2.5vh;
+}    
+#productosSeleccionados p{
+    font-size: 2vh;
+}
+#productosSeleccionados button{
+    font-size: 1.5vh;
+    padding: 1vh;
+    border-radius: 15px;
+    background: rgb(197, 10, 10);
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+        background: rgb(119, 6, 6);
+    }
+}
+.pagoBtns{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+.pagarBtn{
+    font-size: 1.5vh;
+    padding: 1vh;
+    border-radius: 15px;
+    background-color: rgb(127, 255, 155);
+    cursor: pointer;
+    &:hover{
+    background: rgb(99, 196, 163);
+    }
+}
+.cancelarBtn{
+    font-size: 1.5vh;
+    padding: 1vh;
+    border-radius: 15px;
+    color: #fff;
+    background-color: rgb(150, 0, 0);
+    cursor: pointer;
+    &:hover{
+        background: rgb(75, 0, 0);
+    }
+}

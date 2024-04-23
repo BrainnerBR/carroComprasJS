@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./assests/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Carrito Compras</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <h1>Carrito compras</h1>
+            <div class="carritoIcon" id="carritoIcon">
+                <a href="./detallesCarro.html" style="color: black;"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <span class="bubbleAlert" id="bubbleAlert"></span>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <main>
+        <h1 style="text-align: center; font-size:5vh;">Nuestros Productos</h1>
+        <div id="btnContainer">
+            <button class="btn active" data-marca="all">Todos</button>
+            <button class="btn" data-marca="razer">Razer</button>
+            <button class="btn" data-marca="jbl">JBL</button>
+            <button class="btn" data-marca="samsung">Samsung</button>
+        </div>
+        
+        <div class="mainContainer" id="productosContainer"></div>
+    </main>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="./script.js"></script>
+    <script src="./detallesCarro.js"></script>
+    <script src="./burbuja.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+</html>
